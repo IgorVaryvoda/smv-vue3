@@ -44,6 +44,8 @@ export default {
       script.src = src;
       script.type = 'text/javascript'
       script.async = true
+      // Load custom Sirv components
+      // script.dataset.components = 'image, spin, zoom, video'
       script.onload = resolve
       document.body.appendChild(script)
     })
