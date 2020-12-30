@@ -18,9 +18,9 @@ export default {
     let smv = document.createElement('script')
     smv.setAttribute('src', 'https://scripts.sirv.com/sirvjs/v3/sirv.js')
     document.head.appendChild(smv)
-    this.loadScript('https://scripts.sirv.com/sirvjs/v3/sirv.js').then(() => {
-      window.Sirv.start('.off')
-    })
+    // this.loadScript('https://scripts.sirv.com/sirvjs/v3/sirv.js').then(() => {
+    //   window.Sirv.start('.off')
+    // })
   }
 }
 }
