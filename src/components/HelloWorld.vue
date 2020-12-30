@@ -49,7 +49,7 @@ export default {
     })
     },
     startSirv() {
-      typeof window.Sirv === 'undefined' ? this.loadScript('https://scripts.sirv.com/sirvjs/v3/sirv. js').then(() => {
+      typeof window.Sirv === 'undefined' ? this.loadScript('https://scripts.sirv.com/sirvjs/v3/sirv.js').then(() => {
         window.Sirv.start('.off') }) : window.Sirv.start('.off')
       // if (typeof window.Sirv === 'undefined') {
       //   this.loadScript('https://scripts.sirv.com/sirvjs/v3/sirv.js').then(() => {
