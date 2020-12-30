@@ -37,7 +37,7 @@ export default {
   props: {
     msg: String
   },
-    methods: {
+  methods: {
     loadScript(src) {
     return new Promise(resolve => {
       const script = document.createElement('script')
@@ -50,7 +50,7 @@ export default {
     },
     startSirv() {
       typeof window.Sirv === 'undefined' ? this.loadScript('https://scripts.sirv.com/sirvjs/v3/sirv.js').then(() => {
-        window.Sirv.start('.off') }) : window.Sirv.start('.off')
+        window.Sirv.start('.off') }).catch(() => console.error('Something went wrong.')) : window.Sirv.start('.off')
       // if (typeof window.Sirv === 'undefined') {
       //   this.loadScript('https://scripts.sirv.com/sirvjs/v3/sirv.js').then(() => {
       //     window.Sirv.start('.off')
